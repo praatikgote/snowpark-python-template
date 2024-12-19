@@ -5,13 +5,13 @@ Tests for the procedure module.
 from snowflake.snowpark.session import Session
 from src import functions
 from src import functions
-from src import functions_test
+#from src import functions_test
 
 from src.app import run
 
 def test_app_dim(session: Session):
     session.add_import(functions.__file__, 'src.functions')
-        session.add_import(functions_test.__file__, 'src.functions')
+    #session.add_import(functions_test.__file__, 'src.functions')
 
     expected = session.create_dataframe(
         [["Welcome to Snowflake!"], ["Learn more: https://www.snowflake.com/snowpark/"]],
