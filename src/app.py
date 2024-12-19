@@ -20,8 +20,6 @@ def run(snowpark_session: Session) -> DataFrame:
 
     data = [
         ("Welcome to ", "Snowflake!"),
-        ("Hello ", "Snowflake!"),
-        
         ("Learn more: ", "https://www.snowflake.com/snowpark/"),
     ]
 
