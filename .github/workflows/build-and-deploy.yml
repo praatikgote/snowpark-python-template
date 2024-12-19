@@ -39,7 +39,7 @@ jobs:
         run: zip -r ${{ env.ARTIFACT_NAME }} . -x .git/\* 
       
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: python-sources-${{ github.ref_name }}
           path: ${{ env.ARTIFACT_NAME }}
