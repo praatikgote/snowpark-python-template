@@ -2,7 +2,7 @@
 An example stored procedure. __main__ provides an entrypoint for local development
 and testing.
 """
-
+ #
 from snowflake.snowpark.session import Session
 from snowflake.snowpark.dataframe import col, DataFrame
 from snowflake.snowpark.functions import udf
